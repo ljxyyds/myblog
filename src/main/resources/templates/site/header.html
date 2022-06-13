@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:fragment="header">
+<header role="header">
+    <div class="container">
+
+        <!-- logo -->
+
+        <!--<h1> <a th:href="@{/}" title="avana LLC"><img th:src="@{https://cdn.jsdelivr.net/gh/WinterChenS/imgrpo/blog/20210816112027.png}" style="width: 66px;" title="avana LLC" alt="avana LLC"/></a> </h1>-->
+        <h1> <a th:href="@{/}" title="avana LLC"><img th:src="@{/site/images/logo返璞归真.png}" style="height: 90px;width: 270px" ;  title="avana LLC" alt="avana LLC"/></a> </h1>
+        <!-- logo -->
+
+        <!-- nav -->
+
+        <nav role="header-nav" class="navy">
+            <ul>
+                <li th:class="${active == 'work' ? 'nav-active':''}"><a th:href="@{/}" title="Work">生活</a></li>
+                <li th:class="${active == 'about' ? 'nav-active':''}"><a  th:href="@{/about}" title="About">关于博主</a></li>
+                <li th:class="${active == 'blog' ? 'nav-active':''}"><a th:href="@{/blog/index}" title="Blog">博客</a></li>
+            </ul>
+        </nav>
+
+        <!-- nav -->
+
+    </div>
+</header>
+</html>
